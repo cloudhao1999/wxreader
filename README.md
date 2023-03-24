@@ -1,4 +1,4 @@
-# 微信读书VSCode插件 - 侧边栏版
+# 微信读书VSCode插件 - 自用fork侧边栏去滚动条版
 
 ## 使用方法
 
@@ -6,6 +6,7 @@
 - 支持配置（重启生效）：
   - 本地代理服务端口
   - 缩放比例
+  - 不侧边栏滚动条，更加协调
 
 ## 致谢
-- [微信读书插件](https://github.com/LstHeart/vscode-wxread)
+- [微信读书VSCode插件](https://github.com/jaguarsy/wxreader.git)

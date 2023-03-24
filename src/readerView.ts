@@ -44,15 +44,21 @@ export default class ReaderViewProvider implements WebviewViewProvider {
         <style>
           html, body, iframe { margin: 0; width: 100%; height: 100%; border: none; overflow: hidden; }
           iframe {
-            width: ${width}vw;
+            width: ${width + 10}vw;
             height: ${height}vh;
             transform: scale(${scale});
             transform-origin: top left;
           }
+          .container {
+            overflow: auto;
+            margin-left: -10px;
+          }
         </style>
       </head>
       <body>
-        <iframe src="http://localhost:${configState.proxyPort}" />
+        <div class="container">
+          <iframe src="http://localhost:${configState.proxyPort}" />
+        </div>
       </body>
     </html>`;
   }
